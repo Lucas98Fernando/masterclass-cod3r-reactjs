@@ -9,6 +9,7 @@ import Card from "./components/layout/Card";
 import Repetition from "./components/Repetition";
 import Conditionals from "./components/Conditionals";
 import ConditionalsIf from "./components/ConditionalsIf";
+import ClassComponent from "./components/Class";
 
 const App = (props) => (
   <div className="App">
@@ -31,13 +32,16 @@ const App = (props) => (
       </WithChildren>
     </Card>
     <Card title="#04 - Componente com repetição">
-      <Repetition></Repetition>
+      <Repetition />
     </Card>
     <Card title="#05 - Condicionais v1">
-      <Conditionals number={10}></Conditionals>
+      <Conditionals number={10} />
     </Card>
     <Card title="#06 - Condicionais v2 com função">
-      <ConditionalsIf number={5}></ConditionalsIf>
+      <ConditionalsIf number={5} />
+    </Card>
+    <Card title="#07 - Componente com classe">
+      <ClassComponent msg="Exemplo de componente com classe" />
     </Card>
   </div>
 );
