@@ -2,18 +2,18 @@ import "./App.css";
 import React from "react";
 
 // Components
-import First from "./components/Function";
-import WithProps from "./components/WithProps";
-import WithChildren from "./components/WithChildren";
+import First from "./components/basic/Function";
+import WithProps from "./components/basic/WithProps";
+import WithChildren from "./components/basic/WithChildren";
 import Card from "./components/layout/Card";
-import Repetition from "./components/Repetition";
-import Conditionals from "./components/Conditionals";
-import ConditionalsIf from "./components/ConditionalsIf";
-import ClassComponent from "./components/Class";
+import Repetition from "./components/basic/Repetition";
+import Conditionals from "./components/basic/Conditionals";
+import ConditionalsIf from "./components/basic/ConditionalsIf";
+import ClassComponent from "./components/basic/Class";
 
 const App = (props) => (
   <div className="App">
-    <Card title="#01 - Primeiro exemplo">
+    <Card title="#01 - Primeiro exemplo" color="#ee9b00">
       <First />
     </Card>
     <Card title="#02 - Passagem de propriedades">
