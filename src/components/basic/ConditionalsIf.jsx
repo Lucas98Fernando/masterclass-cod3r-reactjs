@@ -1,7 +1,7 @@
 import React from "react";
 import If from "./If";
 
-export default function conditionals(props) {
+export default function Conditionals(props) {
   return (
     <div>
       <h2>O número {props.number} é</h2>

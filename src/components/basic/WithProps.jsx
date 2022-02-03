@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function withParams(props) {
+export default function WithParams(props) {
   return (
     <>
       <h3>{props.title}</h3>

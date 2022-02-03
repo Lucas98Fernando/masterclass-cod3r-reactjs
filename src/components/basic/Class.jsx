@@ -4,13 +4,11 @@ export default class Home extends React.Component {
   state = {
     subtitle: "Acessando um estado dentro da classe",
   };
-
   resetSubtitle() {
     this.setState({
       subtitle: "",
     });
   }
-
   render(props) {
     return (
       <div>

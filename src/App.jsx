@@ -10,17 +10,33 @@ import Repetition from "./components/basic/Repetition";
 import Conditionals from "./components/basic/Conditionals";
 import ConditionalsIf from "./components/basic/ConditionalsIf";
 import ClassComponent from "./components/basic/Class";
+import Father from "./components/communication/direct/Father";
+import Super from "./components/communication/indirect/Super";
+import Input from "./components/form/Input";
 
 const App = (props) => (
+  // props are read only
   <div className="App">
-    <Card title="#01 - Primeiro exemplo" color="#ee9b00">
-      <First />
+    <Card title="#10 - Input">
+      <Input />
     </Card>
-    <Card title="#02 - Passagem de propriedades">
-      <WithProps
-        title="Passando props"
-        subtitle="Passando dados de um componente para outro"
-      />
+    <Card title="#09 - Comunicação indireta">
+      <Super />
+    </Card>
+    <Card title="#08 - Comunicação direta">
+      <Father surname="Silva" />
+    </Card>
+    <Card title="#07 - Componente com classe">
+      <ClassComponent msg="Exemplo de componente com classe" />
+    </Card>
+    <Card title="#06 - Condicionais v2 com função">
+      <ConditionalsIf number={5} />
+    </Card>
+    <Card title="#05 - Condicionais v1">
+      <Conditionals number={10} />
+    </Card>
+    <Card title="#04 - Componente com repetição">
+      <Repetition />
     </Card>
     <Card title="#03 - Componente com filhos">
       <WithChildren>
@@ -31,17 +47,14 @@ const App = (props) => (
         </ul>
       </WithChildren>
     </Card>
-    <Card title="#04 - Componente com repetição">
-      <Repetition />
+    <Card title="#02 - Passagem de propriedades">
+      <WithProps
+        title="Passando props"
+        subtitle="Passando dados de um componente para outro"
+      />
     </Card>
-    <Card title="#05 - Condicionais v1">
-      <Conditionals number={10} />
-    </Card>
-    <Card title="#06 - Condicionais v2 com função">
-      <ConditionalsIf number={5} />
-    </Card>
-    <Card title="#07 - Componente com classe">
-      <ClassComponent msg="Exemplo de componente com classe" />
+    <Card title="#01 - Primeiro exemplo" color="#ee9b00">
+      <First />
     </Card>
   </div>
 );

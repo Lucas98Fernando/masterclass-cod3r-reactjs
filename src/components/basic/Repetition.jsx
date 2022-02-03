@@ -1,7 +1,7 @@
 import React from "react";
 import products from "../../data/products";
 
-export default function repetition() {
+export default function Repetition() {
   // Function to get products array and list data
   function getProductListItem() {
     return products.map((product) => {

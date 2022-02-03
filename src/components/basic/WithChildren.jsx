@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function withChildren(props) {
+export default function WithChildren(props) {
   return (
     <>
       <h3>Filhos:</h3>
