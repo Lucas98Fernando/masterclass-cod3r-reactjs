@@ -14,6 +14,7 @@ import Father from "./components/communication/direct/Father";
 import Super from "./components/communication/indirect/Super";
 import Input from "./components/form/Input";
 import Counter from "./components/counter/Counter";
+import MegaSena from "./components/megaSena/MegaSena";
 
 const App = (props) => (
   // props are read only
@@ -23,6 +24,9 @@ const App = (props) => (
       <h1>Fundamentos React JS</h1>
     </div>
     <div className="Cards">
+      <Card title="#12 - Mega-Sena">
+        <MegaSena qtdNumbers={6} />
+      </Card>
       <Card title="#11 - Contador">
         <Counter />
       </Card>
