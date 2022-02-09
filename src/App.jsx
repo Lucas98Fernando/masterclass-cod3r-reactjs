@@ -15,15 +15,19 @@ import Super from "./components/communication/indirect/Super";
 import Input from "./components/form/Input";
 import Counter from "./components/counter/Counter";
 import MegaSena from "./components/megaSena/MegaSena";
+import Pokemon from "./components/http/Pokemon";
 
 const App = (props) => (
   // props are read only
-  <div className="App">
+  <div className="App BgGradient">
     <div>
       <img src="logo192.png" alt="Logo" width={80} />
       <h1>Fundamentos React JS</h1>
     </div>
     <div className="Cards">
+      <Card title="#13 - Fetch Data">
+        <Pokemon />
+      </Card>
       <Card title="#12 - Mega-Sena">
         <MegaSena qtdNumbers={6} />
       </Card>

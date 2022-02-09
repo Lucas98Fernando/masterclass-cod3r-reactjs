@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Buttons(props) {
-  return <button onClick={props.onClickGenerate}>Gerar número</button>;
+  return (
+    <button className="BgGradient" onClick={props.onClickGenerate}>
+      Gerar número
+    </button>
+  );
 }

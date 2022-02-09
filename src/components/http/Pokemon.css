@@ -1,0 +1,19 @@
+.pokemon h3 {
+  margin: 1rem 0 0;
+  color: royalblue;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.pokemon input {
+  height: 25px;
+}
+
+.pokemon button {
+  color: #fff;
+  width: 100px;
+  height: 28px;
+  margin: 0.5rem 0 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
