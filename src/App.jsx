@@ -16,6 +16,7 @@ import Input from "./components/form/Input";
 import Counter from "./components/counter/Counter";
 import MegaSena from "./components/megaSena/MegaSena";
 import Pokemon from "./components/http/Pokemon";
+import PokemonFn from "./components/http/PokemonFn";
 
 const App = (props) => (
   // props are read only
@@ -25,6 +26,9 @@ const App = (props) => (
       <h1>Fundamentos React JS</h1>
     </div>
     <div className="Cards">
+      <Card title="#14 - Utilizando o useEffect">
+        <PokemonFn />
+      </Card>
       <Card title="#13 - Fetch Data">
         <Pokemon />
       </Card>
